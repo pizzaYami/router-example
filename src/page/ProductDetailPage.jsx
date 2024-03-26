@@ -5,7 +5,6 @@ import { Card, Container, Nav, Navbar } from "react-bootstrap";
 
 function ProductDetailPage() {
   const { id } = useParams();
-  console.log(productData[id].url);
 
   return (
     <>
@@ -21,10 +20,10 @@ function ProductDetailPage() {
       </Navbar>
       <div className="item">
         <Card style={{ width: "90%" }}>
-          <Card.Img variant="top" src={productData[0].url} />
+          <Card.Img variant="top" src={productData[id].url} />
           <Card.Body>
-            <Card.Title>{productData[0].title}</Card.Title>
-            <Card.Text>{productData[0].text}</Card.Text>
+            <Card.Title>{productData[id].title}</Card.Title>
+            <Card.Text>{productData[id].text}</Card.Text>
           </Card.Body>
         </Card>
       </div>
