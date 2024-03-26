@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import AboutPage from "./page/AboutPage.tsx";
-import HomePage from "./page/HomePage.tsx";
-import ProductPage from "./page/ProductPage.tsx";
-import ProductDetailPage from "./page/ProductDetailPage.tsx";
+import AboutPage from "./page/AboutPage";
+import HomePage from "./page/HomePage";
+import ProductPage from "./page/ProductPage";
+import ProductDetailPage from "./page/ProductDetailPage";
 
 function App() {
   return (
